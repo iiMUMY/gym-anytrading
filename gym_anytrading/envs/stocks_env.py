@@ -70,12 +70,12 @@ class StocksEnv(TradingEnv):
             position = None
             if self.prices[current_tick] < self.prices[current_tick - 1]:
                 while (current_tick <= self._end_tick and
-                       self.prices[current_tick] < self.prices[current_tick - 1]):
+                        self.prices[current_tick] < self.prices[current_tick - 1]):
                     current_tick += 1
                 position = Positions.Short
             else:
                 while (current_tick <= self._end_tick and
-                       self.prices[current_tick] >= self.prices[current_tick - 1]):
+                        self.prices[current_tick] >= self.prices[current_tick - 1]):
                     current_tick += 1
                 position = Positions.Long
 

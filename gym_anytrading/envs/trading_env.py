@@ -13,8 +13,8 @@ class Actions(Enum):
 
 
 class Positions(Enum):
-    Short = 0
-    Long = 1
+    Short = 0 # Short position wants to sell shares with high value and use this value to buy shares at a lower value, keeping the difference as profit
+    Long = 1 # Long position wants to buy shares when prices are low and profit by sticking with them while their value is going up
 
     def opposite(self):
         return Positions.Short if self == Positions.Long else Positions.Long
