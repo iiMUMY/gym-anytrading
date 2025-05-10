@@ -1,0 +1,18 @@
+Results Summary:
+================================================================================
+Strategy        Learning Rate   Train Reward    Train Profit    Test Reward     Test Profit    
+--------------------------------------------------------------------------------
+epsilon-greedy  0.0010          42.91           0.6760          11.06           0.8093         
+epsilon-greedy  0.0100          47.33           0.7085          9.41            0.7914         
+epsilon-greedy  0.1000          79.15           0.7892          0.15            0.7615         
+thompson        0.0010          64.07           0.8156          12.00           0.7888         
+thompson        0.0100          28.53           0.5531          -15.26          0.6816         
+thompson        0.1000          -0.38           0.6454          14.69           0.7722         
+================================================================================
+
+Best Configurations:
+Best Training Performance: Strategy=thompson, LR=0.001, Profit=0.8156
+Best Testing Performance: Strategy=epsilon-greedy, LR=0.001, Profit=0.8093
+Best Overall Performance: Strategy=thompson, LR=0.001
+  Training Profit=0.8156, Testing Profit=0.7888
+================================================================================
