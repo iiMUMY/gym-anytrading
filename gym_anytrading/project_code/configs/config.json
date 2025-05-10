@@ -1,0 +1,12 @@
+{
+  "experiment_type": "single_df",
+  "window_size": 10,
+  "train_frame_bound": [10, 250],
+  "test_frame_bound": [250, 350],
+  "results_base_dir": "results_tabular",
+  "learning_rates": [0.1, 0.01, 0.001],
+  "exploration_strategies": ["epsilon-greedy", "thompson"],
+  "num_episodes": 10000,
+
+  "df_path": ""
+}
